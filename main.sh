@@ -2,14 +2,14 @@
 
 "cd"
 
-output=$(python3 Documentos/gitt/robot_git/path.py)
-
-echo output
-
 cp Documentos/gitt/robot_git/robot_git.py rbt_git.py
 
-mv rbt_git.py output/rbt_git.py
+echo "What's the path of the repository?"
 
-cd output
+read OUT
+
+mv rbt_git.py $OUT/rbt_git.py
+
+cd $OUT
 
 python3 rbt_git.py
