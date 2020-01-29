@@ -1,5 +1,6 @@
 import subprocess as cmd
 
+#GIT#
 message = 'update...'
 
 i = input("Write the message for commit. If you don't want to write, type 'std'.: ")
